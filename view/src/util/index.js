@@ -21,7 +21,7 @@ export const getTodos = async () => {
 
 export const removeTodo = async (id) => {
   try {
-    const res = await fetch(`api/todo/${id}`, {
+    await fetch(`api/todo/${id}`, {
       method: 'DELETE',
     });
     return 'deleted';
